@@ -2,6 +2,7 @@ import java.time.LocalTime;
 
 public class Flight {
 
+    //declare semua data yang diperlukan
     private String namaPemesan;
     private String asal;
     private String tujuan;
@@ -16,6 +17,7 @@ public class Flight {
         // TODO Auto-generated constructor stub
     }
 
+    //constructor untuk membuat objek Flight (dipanggil saat pengguna pesan penerbangan)
     public Flight(String namaPemesan, String asal, String tujuan, String kodePesawat, String namaPesawat,
                   String kodeBooking, int harga, String metodeBayar, String jamKeberangkatan) {
         super();
@@ -30,7 +32,7 @@ public class Flight {
         this.jamKeberangkatan = jamKeberangkatan;
     }
 
-
+    //setter dan getter agar value attribute dapat dipanggil dari class lain.
     public String getNamaPemesan() {
         return namaPemesan;
     }
